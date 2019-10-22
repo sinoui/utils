@@ -1,3 +1,4 @@
-import Counter from './Counter';
+import debounce from './debounce';
 
-export default Counter;
+// eslint-disable-next-line import/prefer-default-export
+export { debounce };
