@@ -1,10 +1,13 @@
 # @sinoui/utils
 
-这是由[ts-lib-scripts](https://github.com/sinoui/ts-lib-scripts)创建的 TypeScript 库项目。
+[![npm version](https://img.shields.io/npm/v/@sinoui/utils)](https://www.npmjs.com/package/@sinoui/utils)
+[![downloads](https://img.shields.io/npm/dm/@sinoui/utils)](https://www.npmjs.com/package/@sinoui/utils)
+
+sinoui 工具库。
 
 ## 本地开发
 
-项目中有以下有用的命令。
+项目中有以下可用的命令。
 
 ### `yarn start`
 
@@ -29,31 +32,3 @@
 `yarn test`以监听模式启动 jest，运行单元测试。
 
 开启 vscode 的 jest 插件，会在文件变化时自动运行单元测试。
-
-### 预览文档
-
-```shell
-yarn doc:dev
-```
-
-### 编译并打包文档
-
-```shell
-yarn doc:publish
-```
-
-### 发布文档
-
-在发布文档之前，在`package.json`中配置好`homepage`，如下所示：
-
-```json
-{
-  "homepage": "https://sinouiincubator.github.io/editable-data-table"
-}
-```
-
-配置完之后就可以执行下面的命令行发布文档：
-
-```shell
-yarn doc:publish
-```
