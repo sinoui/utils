@@ -24,6 +24,8 @@ sinoui 工具库。
 
 ### debounce
 
+`0.1.0`
+
 [防抖函数](https://sinoui.github.io/sinoui-guide/docs/debounce-and-throttle-guide)的简易实现。与 [lodash/debounce](https://lodash.com/docs/4.17.15#debounce) 类似。
 
 ```ts
@@ -56,6 +58,8 @@ function debounce(func: Function, [wait = 166]): Function;
 返回包装后的函数。此函数还有一个 `cancel` 属性，执行 `cancel()`，可以取消 `func` 的执行。
 
 ### animate
+
+`0.2.0`
 
 简单的动画执行函数。
 
