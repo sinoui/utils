@@ -1,4 +1,4 @@
 import debounce from './debounce';
+import animate from './animate';
 
-// eslint-disable-next-line import/prefer-default-export
-export { debounce };
+export { debounce, animate };
