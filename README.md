@@ -52,6 +52,8 @@ function debounce(func: Function, [wait = 166]): Function;
 | -------- | -------------------------------------- |
 | func     | 执行的回调函数                         |
 | wait     | 等待时长。单位是毫秒。默认为 `166ms`。 |
+| options  | 配置项。默认为`{}`。|
+| options.leading | 默认为`false`。设置为 `true`，则第一次函数调用会立马执行。|
 
 返回值：
 
