@@ -37,4 +37,18 @@ describe('debounce', () => {
 
     expect(handler).toHaveBeenCalledTimes(0);
   });
+
+  it('options.leading = true', () => {
+    const handler = jest.fn();
+    const debounced = debounce(handler, 166, { leading: true });
+
+    debounced();
+    expect(handler).toBeCalled();
+
+    debounced();
+    expect(handler).toBeCalledTimes(1);
+
+    jest.runAllTimers();
+    expect(handler).toBeCalledTimes(2);
+  });
 });
